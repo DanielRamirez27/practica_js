@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       console.log('hola, mundo')
+       var globalVar = "10";
+       function myFuntion(){
+            var localVar = "20";
+            //console.log(localVar);
+            console.log(globalVar);
+        }
+        myFuntion();
+        //console.log(localVar);
+        console.log(globalVar);
+        
+
+        var variableGlobal = "soy una variable global";
+        function miFuntion(){
+            console.log(variableGlobal);
+        }
+        miFuntion();
+        console.log(variableGlobal);
+
+        let nombreCompleto = "Daniel"+" "+"Ramirez";
+        console.log(nombreCompleto);
+
+        let edad = 19;
+        let mensaje = (edad>=18)?"Eres mayor de edad" : "Eres menor de edad";
+        console.log(mensaje);
+
+        let persona = {nombre:"daniel", edadd:20};
+        console.log(persona.nombre);
+
+        console.log(typeof persona);
+
+        var num1 = 1;
+        var num2 = 6;
+        console.log(num1+num2);
+        console.log(num1*num2);
+        let number = (num1>num2)? "esa mayor" : "es menor";
+        console.log(number);
+        var boolVar = true;
+        boolVar && (num1<num2);
+        console.log(boolVar);
+        var ternaryResult = (num1>num1)? "mayor" : "menor o igual";
+        console.log(ternaryResult);
+
+        let person = {name: "daniel", age:"20", city:"ocana"};
+        console.log(person)
+        let property = person.age;
+        console.log(typeof property);
+        console.log(typeof person.name);
+        let x;
+        console.log(x);
+
+        let saludo = {
+            nombre1 : "juan",
+            edad1 : "20",
+            saludar : function(){
+                console.log("hola mi nombre es" + this.nombre1);
+            }
+        }
+        console.log(saludo.saludar());
+
+        let mayorEdad = 18;
+        let edad1 = 17;
+        if(edad1>=mayorEdad){
+            console.log("es mayor de edad")
+        }else{
+            console.log("es menor de edad ")
+        }
+
+        let number1 = 4;
+        let num = 0;
+        if(number1 < num){
+            console.log("es negativo");
+        }else if(number1 > num){
+            console.log("es positivo");
+        }else{
+            console.log("es cero");
+        }
+
+        let salaryHora = 10000;
+        let horaTraEm = 40;
+        let horaTraba = 45;
+        let horaExtra = 1.5;
+        let total = salaryHora*horaTraba;
+        if (horaTraba>horaTraEm){
+            let bonus = salaryHora*horaExtra;
+            let bonus1 = bonus+total;
+            console.log("pago extra:" + bonus1)
+        }else{
+            console.log("el salario total es:"+ total);
+        }
+        
+
+    </script>
+</body>
+</html>
