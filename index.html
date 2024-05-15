@@ -97,7 +97,97 @@
         }else{
             console.log("el salario total es:"+ total);
         }
+
+
+        var mesDelAño = prompt("ingrese el mes");
+        switch(mesDelAño){
+            case "enero":
+            console.log("el mes es enero");
+            break;
+            case "febrero":
+            console.log("el mes es febrero");
+            break;
+            case "marzo":
+            console.log("el mes es marzo");
+            break;
+            case "abril":
+            console.log("el mes es abril");
+            break;
+            case "mayo":
+            console.log("el mes es mayo");
+            break;
+            case "junio":
+            console.log("el mes es junio");
+            break;
+            case "julio":
+            console.log("el mes es julio");
+            break;
+            case "agosto":
+            console.log("el mes es agosto");
+            break;
+            case "septiembre":
+            console.log("el mes es septiembre");
+            break;
+            case "octubre":
+            console.log("el mes es octubre");
+            break;
+            case "noviembre":
+            console.log("el mes es noviembre");
+            break;
+            case "diciembre":
+            console.log("el mes es diciembre");
+            break;
+        }
+
+        for (let i = 1; i <= 10; i++) {
+            console.log(i);
+            if (i === 5) {
+            console.log("¡Se alcanzó el número 5!");
+            break; // Sale del bucle cuando i es igual a 5
+            }
+        }
+
+        for (let i = 1; i <= 10; i++) {
+            if (i % 2 === 0) {
+            continue; // Omite la impresión de números pares
+            }
+            console.log(i);
+        }
+
+        var nu = prompt("ingrese un numero");
+        var contador = 1;
+        var sumador = 0;
+        while (contador <= nu) {
+            sumador += contador;
+            contador++;
+        }
+        console.log("la suma total es: " + sumador);
+
+
+        var nume = prompt("ingrese un numero");
+        var cont = 1;
+        var mult = 1;
+        do{
+            mult*cont;
+            cont++;
+        }
+        while (cont <= nume){
+            console.log("el factorial es: " + mult);
+        }
+
+
+        let numPares = 0;
+        let numimpares = 0;
         
+        for (let i = 1; i <= 10; i++) {
+            if (i % 2 === 0) {
+                numPares++; 
+            }else{
+                numimpares++;
+            }
+        }
+        console.log("la cantidad de numeros pares son: " + numPares);
+        console.log("la cantidad de numeros pares son: " + numimpares);
 
     </script>
 </body>
